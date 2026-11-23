@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manikandan | Contact Me</title>
+
+    <meta name="description" content="Contact Manikandan, a B.Tech Artificial Intelligence and Data Science student and aspiring web developer, for internships, projects and opportunities.">
+
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://YOUR-DOMAIN.example/contact.html">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Manikandan | Portfolio">
+    <meta property="og:title" content="Manikandan | Contact Me">
+    <meta property="og:description" content="Get in touch with Manikandan for internship opportunities, projects and collaboration.">
+    <meta property="og:url" content="https://YOUR-DOMAIN.example/contact.html">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="theme-color" content="#0f1226">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact Manikandan",
+        "url": "https://YOUR-DOMAIN.example/contact.html",
+        "mainEntity": {
+            "@type": "Person",
+            "name": "Manikandan",
+            "jobTitle": "B.Tech Artificial Intelligence and Data Science Student",
+            "sameAs": [
+                "https://github.com/tamiliniyan650-png"
+            ]
+        }
+    }
+    </script>
+
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Skip Navigation -->
+    <a class="skip" href="#main">
+        Skip to main content
+    </a>
+
+    <!-- Header / Navigation -->
+    <header class="rail">
+
+        <a class="mono" href="index.html" aria-label="Manikandan, home">
+            M
+        </a>
+
+        <button
+            class="menu"
+            id="menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav">
+            Menu
+        </button>
+
+        <nav id="nav" aria-label="Main navigation">
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="projects.html">Projects</a>
+                </li>
+
+                <li>
+                    <a href="contact.html" aria-current="page">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <!-- Dark Mode Button -->
+        <button
+            class="tg"
+            id="theme"
+            type="button"
+            aria-pressed="false"
+            aria-label="Toggle dark mode">
+
+            <span aria-hidden="true">&#9680;</span>
+            <span class="sr">Toggle dark mode</span>
+
+        </button>
+
+    </header>
+
+    <!-- Main Content -->
+    <main id="main">
+
+        <!-- Page Header -->
+        <header class="wrap ph">
+
+            <h1>Contact</h1>
+
+            <p>
+                Have an internship opportunity, project idea or question?
+                Send me a message.
+            </p>
+
+        </header>
+
+        <!-- Contact Section -->
+        <section
+            aria-labelledby="contact-title"
+            style="padding-top: 2rem;">
+
+            <div class="split">
+
+                <!-- Contact Form -->
+                <div class="s7">
+
+                    <h2 id="contact-title">Send a message</h2>
+
+                    <p id="form-help">
+                        All fields are required. Your email application
+                        will open with the message prepared for you.
+                    </p>
+
+                    <form
+                        id="cf"
+                        aria-describedby="form-help"
+                        novalidate>
+
+                        <!-- Name -->
+                        <div>
+
+                            <label for="name">
+                                Your name
+                                <span aria-hidden="true">*</span>
+                            </label>
+
+                            <input
+                                id="name"
+                                name="name"
+                                type="text"
+                                autocomplete="name"
+                                required
+                                minlength="2"
+                                aria-describedby="name-err">
+
+                            <p
+                                class="err"
+                                id="name-err"
+                                hidden>
+                            </p>
+
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+
+                            <label for="email">
+                                Email address
+                                <span aria-hidden="true">*</span>
+                            </label>
+
+                            <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                autocomplete="email"
+                                required
+                                aria-describedby="email-err">
+
+                            <p
+                                class="err"
+                                id="email-err"
+                                hidden>
+                            </p>
+
+                        </div>
+
+                        <!-- Subject -->
+                        <div>
+
+                            <label for="subject">
+                                Subject
+                                <span aria-hidden="true">*</span>
+                            </label>
+
+                            <input
+                                id="subject"
+                                name="subject"
+                                type="text"
+                                required
+                                minlength="3"
+                                aria-describedby="subject-err">
+
+                            <p
+                                class="err"
+                                id="subject-err"
+                                hidden>
+                            </p>
+
+                        </div>
+
+                        <!-- Message -->
+                        <div>
+
+                            <label for="message">
+                                Message
+                                <span aria-hidden="true">*</span>
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                required
+                                minlength="10"
+                                aria-describedby="message-err"></textarea>
+
+                            <p
+                                class="err"
+                                id="message-err"
+                                hidden>
+                            </p>
+
+                        </div>
+
+                        <!-- Form Status -->
+                        <p
+                            class="st"
+                            id="st"
+                            role="status"
+                            aria-live="polite">
+                        </p>
+
+                        <!-- Submit Button -->
+                        <div>
+
+                            <button class="btn" type="submit">
+                                Prepare email
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <!-- Other Contact Details -->
+                <aside
+                    class="s5 panel"
+                    aria-labelledby="other-contact">
+
+                    <h2 id="other-contact">
+                        Connect with me
+                    </h2>
+
+                    <dl>
+                        <dt>Email</dt>
+
+                        <dd>
+                            tamiliniyan650@gmail.com
+                        </dd>
+                       <dt>Phone No</dt>
+                       
+                        <dd>
+                            7397256653
+                        </dd>
+                        <dt>Location</dt>
+
+                        <dd>
+                            Chennai, Tamil Nadu, India
+                        </dd>
+
+                    </dl>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; <span id="yr">2026</span>
+            Manikandan. All rights reserved.
+        </p>
+
+        <ul class="soc" aria-label="Social links" style="margin: 0;">
+          <li>
+                        <a
+                            href="https://www.linkedin.com/in/manikandan-m202007"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            Linked-in
+                            <span class="sr">(opens in a new tab)</span>
+
+                        </a>
+                    </li>
+            <li>
+
+                <a
+                    href="https://github.com/tamiliniyan650-png"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    GitHub
+                    <span class="sr">(opens in a new tab)</span>
+
+                </a>
+
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+
+    </footer>
+
+</body>
+</html>
